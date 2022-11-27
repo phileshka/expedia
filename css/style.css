@@ -1,7 +1,8 @@
 html body{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-
+    color: white;
+    font-weight: 400;
 }
 img{
     width: auto;
@@ -9,24 +10,49 @@ img{
     max-width: 100%;
 }
 .header{
-    margin-top: 56px;
+    padding-top: 56px;
+    background-image: url(/img/mountain_bg.png);
+    background-size: cover;
 }
+
+.logo{
+    list-style: none;
+    display: flex;
+    justify-content:baseline;
+}
+
+.logo .logo_img{
+    margin-top: -10px;
+}
+
+.logo .logo_text{
+    font-size: 22px;
+    font-style: bold;
+    font-weight: 700;
+    padding-top: 3px;
+}
+
+.menu{
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
 .menu .sub_menu{
     list-style: none;
     display: flex;
-    justify-content: center;
     padding-top: 10px;
+    justify-content: space-around;
 }
 
 .menu ul.sub_menu li a {
     text-decoration: none;
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 20px;
     color: black;
-    padding-right: 12px;
+    padding-right: 20px;
     transition: all 0.3s ease;
-    
+    color: white;
 }
 
 .btn_sign{
@@ -36,9 +62,30 @@ background: #1F4AA8;
 border-radius: 39px;
 font-weight: 700;
 line-height: 17px;
-letter-spacing: 0em;
 text-align: center;
 color: white;
 border: 0ch;
+margin-top: -5px;
+}
+
+.text_block_banner{
+    padding-top: 129px;
+    text-align: center;
+    
+}
+
+.text_block_banner h1{
+    font-size: 72px;
+    text-align: center;
+    font-weight: 700;
+    font-style: bold;
+    padding-bottom: 35px;
+}
+
+.text_block_banner p{
+    padding-top: 35px;
+    font-weight: 600;
+    padding-bottom: 160px;
+    font-size: 18px;
 }
 
